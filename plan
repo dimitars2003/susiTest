@@ -1,0 +1,41 @@
+system - list ot pair <course, list<Ids>id (darji id-ta na negovi studenti i teacheri)(na vseki student darji list ot ocenki i bool dali e minal(ako e auto func go nqma))>, list students, list teachers, list admins
+any console work -> console manager
+logger na sistema
+- add admin - choose user and add to admins/ create a user to be an admin
+- create course - admin - create a course and add to list (no enrolled students)
+- create teacher - admin - create a teacher and add to list
+- create student - admin - create a student and add to list
+- enroll student - admin i teacher - zapishi student v kurs
+- remove student - admin i teacher - mahni student ot kurs
+- add grade - teacher
+- pass course - 
+    teacher - opredelq dali student e passnal
+    student - proverka dali minava func auto sum of grades true/false > 2.99
+
+students, teachers and admins are users 
+
+system gives different visibility to them
+
+user - username and pass
+
+course - name, z    
+
+za plan 
+nasledqvane na sistemi
+- base - kakvo moje da pravi vseki user i darji data
+
+- student - kakvo moje da pravi student
+- teacher - kakvo moje da pravi teacher
+- admin - kakvo moje da pravi admin
+
+pri logvane se opredelq koq sistema se vika
+
+za plan 
+agregaciq za neshto koeto darji danni - te sa ednakvi za vsqka sistema
+- base - obshti neshta za vsichki
+
+- student - kakvo moje da pravi student
+- teacher - kakvo moje da pravi teacher
+- admin - kakvo moje da pravi admin
+
+pri logvane se opredelq koq sistema se vika

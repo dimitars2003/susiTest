@@ -2,18 +2,18 @@ package test;
 import java.util.List;
 
 
-public class Student  extends Person {
+public class Student {
 	private Semester sem;
 	private List<Course> courses;
-
+        private Person p;
 	
 	public Student() {
-		super();
+		p = new Person();
 		sem = Semester.First;
 	}
 	
 	public Student(String name, int age, Semester sem) {
-		super(name,age);
+		p= new Person(name,age);
 		this.sem = sem;
 	}
 
@@ -60,7 +60,7 @@ public class Student  extends Person {
 	}
 	
 	public void print() {
-		super.print();
+		p.print();
 		System.out.println(sem.name());
 		for(int i = 0; i < courses.size();i++) {
 			System.out.println();

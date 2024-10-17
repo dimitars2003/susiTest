@@ -10,11 +10,13 @@ public class Student {
 	public Student() {
 		p = new Person();
 		sem = Semester.First;
+		courses = new ArrayList<Course>();
 	}
 	
 	public Student(String name, int age, Semester sem) {
 		p= new Person(name,age);
 		this.sem = sem;
+		courses = new ArrayList<Course>();
 	}
 
 	public Semester getSem() {
@@ -26,9 +28,13 @@ public class Student {
 	}
 	
 	public void enrolCourse(Course toAdd) {
-		if(!isEnrolled(toAdd)) {
-			this.courses.add(toAdd);
+		if(course.size()==0){
+			return;
 		}
+		    if(!isEnrolled(toAdd)) {
+			this.courses.add(toAdd);
+		    }
+		
 	}
 	
 	public List<Course> getCourses() {
@@ -44,8 +50,12 @@ public class Student {
 	}
 	
 	public void leaveCourse(Course toAdd) {
+		if(course.size()==0){
+			return;
+		}
 		if(!isEnrolled(toAdd)) {
 			courses.remove(toAdd);
+		
 		}
 		return;
 	}

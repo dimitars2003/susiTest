@@ -1,15 +1,16 @@
 package test;
 
-public class Teacher extends Person {
+public class Teacher {
 	Department dp;
+	Person p
 	
 	public Teacher() {
-		super();
+		p = new Person();
 		dp = Department.ComputerScience;
 	}
 	
 	public Teacher(String name, int age, Department dp) {
-		super(name,age);
+		p = new Person(name,age);
 		this.dp = dp;
 	}
 
@@ -22,7 +23,7 @@ public class Teacher extends Person {
 	}
 	
 	public void print() {
-		super.print();
+		p.print();
 		System.out.println(dp.name());
 		
 	}

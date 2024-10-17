@@ -1,22 +1,26 @@
 package test;
 import java.util.List;
 
+private static final int CAPCOURSE = 5;
 
 public class Student {
 	private Semester sem;
 	private List<Course> courses;
+	private int currCourses;
         private Person p;
 	
 	public Student() {
 		p = new Person();
 		sem = Semester.First;
 		courses = new ArrayList<Course>();
+		currCourses = 0;
 	}
 	
-	public Student(String name, int age, Semester sem) {
-		p= new Person(name,age);
+	public Student(String name,String username, String pass, int age, Semester sem) {
+		p= new Person(name,username,pass,age);
 		this.sem = sem;
 		courses = new ArrayList<Course>();
+		currCourses = 0;
 	}
 
 	public Semester getSem() {
@@ -28,7 +32,7 @@ public class Student {
 	}
 	
 	public void enrolCourse(Course toAdd) {
-		if(course.size()==0){
+		if(course.size() == CAPCOURSE){ //hvashta li go
 			return;
 		}
 		    if(!isEnrolled(toAdd)) {

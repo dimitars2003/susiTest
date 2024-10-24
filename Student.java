@@ -8,6 +8,7 @@ public class Student {
 	private List<Course> courses;
 	private int currCourses;
         private Person p;
+	//private Specialty sp;
 	
 	public Student() {
 		p = new Person();

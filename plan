@@ -5,12 +5,14 @@ logger na sistema
 - create course - admin - create a course and add to list (no enrolled students)
 - create teacher - admin - create a teacher and add to list
 - create student - admin - create a student and add to list
-- enroll student - admin i teacher - zapishi student v kurs
+- enroll student - admin i teacher - zapishi student v kurs/priemi zaqvka za zapisvane?
 - remove student - admin i teacher - mahni student ot kurs
 - add grade - teacher
 - pass course - 
     teacher - opredelq dali student e passnal
     student - proverka dali minava func auto sum of grades true/false > 2.99
+- create specialty - admin 
+- enroll izbiraem? - student -> enroll student and gives id
 
 students, teachers and admins are users 
 

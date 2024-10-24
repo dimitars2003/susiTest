@@ -39,6 +39,14 @@ public class StudentCourseLinker{
     }
   }
 
+  public void removeStudent(int idSt, int idC){
+    for(int i = 0; i < idStudents.size(), i++){
+      if(idStudents.getAt(i) == idSt && idCourse.getAt(i) == idC){
+        idStudents.remove(i);
+        idCourse.remove(i);
+      }
+    }
+  }
   
 };
 

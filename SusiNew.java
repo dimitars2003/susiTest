@@ -9,5 +9,9 @@ public class SusiNew{
   private List<Teacher> teachers;
 
   private List<Course> courses;
+
+  private StudentCourseLinker linker;
+
+  
   
 };

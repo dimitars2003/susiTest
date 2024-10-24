@@ -39,18 +39,18 @@ public class Person {
 	}
 
 
-	public void setUserName(String username) {
-		this.username = username;
-	}//trqbva li
+	//public void setUserName(String username) {
+	//	this.username = username;
+	//}//trqbva li
 
 	public String getPass() {
 		return pass;
 	}
 
 
-	public void setPass(String pass) {
-		this.pass = pass;
-	}//trqbva li
+	//public void setPass(String pass) {
+	//	this.pass = pass;
+	//}//trqbva li
 
 	public int getAge() {
 		return age;
